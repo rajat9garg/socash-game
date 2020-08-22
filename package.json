@@ -1,0 +1,16 @@
+{
+  "name": "@iamsap/poker",
+  "version": "0.0.1",
+  "description": "A simple poker game simulation",
+  "main": "game.js",
+  "keywords": [
+    "poker",
+    "node.js"
+  ],
+  "scripts": {
+    "test": "jasmine"
+  },
+  "dependencies": {
+    "jasmine": "^3.6.1"
+  }
+}
