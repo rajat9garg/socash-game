@@ -8,5 +8,5 @@ node game.js
 
 ```
 # output
-cards distributed and you will see the winning member name and card
+Three cards will be distributed to each player and winning player name and card will displayed
 ```
