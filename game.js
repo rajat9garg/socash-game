@@ -11,7 +11,6 @@ function getPlayerWithBestHand() {
     var playerCards = players[i].pocketCards.slice(0);
 
     var hand = hands.getBestHand(playerCards);
-    console.log(players[i])
     if (!bestPlayer || !bestHand) {
       bestPlayer = players[i];
       bestHand = hand;
@@ -51,7 +50,7 @@ var players = [
   { name: "Amit" },
   { name: "Anil" },
   { name: "Aman" },
-  { name: "Messi" },
+  { name: "Anant" },
 ];
 
 var bestPlayer = null;
@@ -61,5 +60,12 @@ var deck = cards.shuffle();
 
 for (var i = 0; i < players.length; i++) {
   players[i].pocketCards = deck.splice(0, 3);
+  let cardName = ""
+  for(let j=0;j<players[i].pocketCards.length;j++){
+    cardName += " {"
+    cardName += `${players[i].pocketCards[j].value} ${players[i].pocketCards[j].name}`
+    cardName += "} "
+  }
+  console.log(`${players[i].name} cards given:${cardName} `)
 }
 echoBestPlayer("deal");
